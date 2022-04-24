@@ -18,6 +18,7 @@ const namesOfDogs = ref([
   {nameEn:'Luna', nameJa:'ルナ',age:4},
   {nameEn:'Mocha',nameJa:'モカ', age:7},
   {nameEn:'Rose', nameJa:'ローズ', age:3},
+  {nameEn:'Oliver', nameJa:'オリヴァー', age:3},
 ]);
 
 // 追加用
