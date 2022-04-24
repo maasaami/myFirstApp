@@ -6,6 +6,8 @@ const namesOfCats = ref([
   {nameEn:'Leo', nameJa:'レオ', age:10},
   {nameEn:'Bella',nameJa:'ベル', age:13},
   {nameEn:'Milo', nameJa:'マイロ',age:4},
+  {nameEn:'Simba', nameJa:'シンバ',age:8},
+  {nameEn:'Midnight', nameJa:'ミッドナイト',age:3},
   {nameEn:'Charlie',nameJa:'チャーリー', age:7},
   {nameEn:'Kitty', nameJa:'キティ', age:3},
   {nameEn:'Kitty2', nameJa:'キティ2', age:3},
