@@ -1,25 +1,20 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 
 // データを定義
-const namesOfCats = ref([
-  {nameEn:'Leo', nameJa:'レオ', age:10},
-  {nameEn:'Bella',nameJa:'ベル', age:13},
-  {nameEn:'Milo', nameJa:'マイロ',age:4},
-  {nameEn:'Simba', nameJa:'シンバ',age:8},
-  {nameEn:'Midnight', nameJa:'ミッドナイト',age:3},
-  {nameEn:'Charlie',nameJa:'チャーリー', age:7},
-  {nameEn:'Kitty', nameJa:'キティ', age:3},
-  {nameEn:'Kitty2', nameJa:'キティ2', age:3},
-]);
-const namesOfDogs = ref([
-  {nameEn:'Abby', nameJa:'アビー', age:10},
-  {nameEn:'Carly',nameJa:'カーリー', age:13},
-  {nameEn:'Luna', nameJa:'ルナ',age:4},
-  {nameEn:'Mocha',nameJa:'モカ', age:7},
-  {nameEn:'Rose', nameJa:'ローズ', age:3},
-  {nameEn:'Oliver', nameJa:'オリヴァー', age:3},
-]);
+const namesOfCats = ref([])
+const namesOfDogs = ref([])
+onMounted(() => {
+  fetch("http://localhost:4000/cats")
+    .then(res => res.json())
+    .then(data => namesOfCats.value = data)
+    .catch(err => console.log(err.message));
+    
+  fetch("http://localhost:4000/dogs")
+    .then(res => res.json())
+    .then(data => namesOfDogs.value = data)
+    .catch(err => console.log(err.message))
+}) 
 
 // 追加用
 const pushInputNameEn = ref("");

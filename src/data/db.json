@@ -1,0 +1,20 @@
+{
+    "cats" :[
+        {"nameEn":"Leo", "nameJa":"レオ", "age":10},
+        {"nameEn":"Bella","nameJa":"ベル", "age":13},
+        {"nameEn":"Milo", "nameJa":"マイロ","age":4},
+        {"nameEn":"Simba", "nameJa":"シンバ","age":8},
+        {"nameEn":"Midnight", "nameJa":"ミッドナイト","age":3},
+        {"nameEn":"Charlie","nameJa":"チャーリー", "age":7},
+        {"nameEn":"Kitty", "nameJa":"キティ", "age":3},
+        {"nameEn":"Kitty2", "nameJa":"キティ2", "age":3}
+      ],
+    "dogs" :[
+        {"nameEn":"Abby", "nameJa":"アビー", "age":10},
+        {"nameEn":"Carly","nameJa":"カーリー", "age":13},
+        {"nameEn":"Luna", "nameJa":"ルナ","age":4},
+        {"nameEn":"Mocha","nameJa":"モカ", "age":7},
+        {"nameEn":"Rose", "nameJa":"ローズ", "age":3},
+        {"nameEn":"Oliver", "nameJa":"オリヴァー", "age":3}
+    ]
+}
