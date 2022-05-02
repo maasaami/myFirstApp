@@ -8,6 +8,8 @@
 
 
 # 20220503 json-serverでデータベースごっこ
+```
 npx json-server --watch src/data/db.json -p 4000
 yarn dev
+```
 をそれぞれ別のターミナルでやる(なんで？)となんかうまくいく。
