@@ -63,12 +63,16 @@ function downloadCSV(list) {
     }).join(',');
   }).join("\n");
 
-  // const csv = header + body
+  const date = new Date()
+  const Y = date.getFullYear()
+  const M = ("00" + (date.getMonth() + 1)).slice(-2)
+  const D = ("00" + date.getDate()).slice(-2)
+  const YMD = Y + M + D
 
   const anchor = document.createElement('a');
   anchor.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(header + body);
   anchor.target = '_blank';
-  anchor.download = 'Animal List.csv';
+  anchor.download = 'Animal List ' + YMD + '.csv';
   anchor.click();
 
 };
@@ -91,7 +95,10 @@ function downloadCSV(list) {
     <div>
       <input v-model="searchInput" placeholder="検索" class="searchInput">
       <label><input type="checkbox" v-model="exactMatch">完全一致</label>
-      <h3><a href="#catList">猫該当:{{ filteredCats.length }}</a> <a href="#dogList">犬該当:{{ filteredDogs.length }}</a></h3>
+      <h3>
+        <a href="#catList">猫 該当:{{ filteredCats.length }}</a>
+        <a href="#dogList">犬 該当:{{ filteredDogs.length }}</a>
+      </h3>
     </div>
 
     <!-- 猫のリスト -->
