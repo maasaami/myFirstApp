@@ -35,7 +35,7 @@ const pushAnimal = (array) => {
 
 // 削除用
 const deletCat = cat => namesOfCats.value.splice(namesOfCats.value.indexOf(cat), 1);
-const deletDog = (dog) => { namesOfDogs.value.splice(namesOfDogs.value.indexOf(dog), 1) };
+const deletDog = dog => namesOfDogs.value.splice(namesOfDogs.value.indexOf(dog), 1);
 
 // 検索用
 const searchInput = ref("");
