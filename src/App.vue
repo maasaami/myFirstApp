@@ -3,12 +3,12 @@ import catsTable from './components/catsTable.vue'
 </script>
 
 <template>
-  <catsTable/>
+  <catsTable />
 </template>
 
 <style>
 #app {
-  font-family:"Hiragino Maru Gothic ProN", Meiryo, sans-serif;
+  font-family: "Hiragino Maru Gothic ProN", Meiryo, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
