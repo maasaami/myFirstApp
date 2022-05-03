@@ -12,6 +12,5 @@ import catsTable from './components/catsTable.vue'
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin: 15px;
 }
 </style>
