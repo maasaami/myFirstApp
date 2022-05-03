@@ -5,6 +5,7 @@ import { ref, computed, onMounted } from 'vue'
 const namesOfCats = ref([])
 const namesOfDogs = ref([])
 
+//データをfetchし関数に代入？
 onMounted(() => {
   fetch("http://localhost:4000/cats")
     .then(res => res.json())
